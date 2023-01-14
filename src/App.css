@@ -1,0 +1,209 @@
+@import url("https://font.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #5372f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.quote-wrapper {
+  background-color: #fff;
+  width: 630px;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  color: #202842;
+}
+
+@media (max-width: 600px) {
+  .quote-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px 20px 15px;
+  }
+  .quote-wrapper header {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .quote-content {
+    margin: 25px 0;
+  }
+  .quote-area .fa {
+    font-size: 10px;
+  }
+  .quote-area .quote {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .author {
+    display: flex;
+    font-size: 15px;
+    margin-top: 15px;
+    font-style: italic;
+    justify-content: flex-end;
+  }
+  .features ul li {
+    margin: 0 5px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    cursor: pointer;
+    color: #5372f0;
+    list-style: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #5372f0;
+    transition: all 0.3s ease;
+  }
+
+  ul li:first-child {
+    margin-left: 0;
+  }
+
+  ul li:is(:hover, .active) {
+    color: #fff;
+    background-color: #5372f0;
+  }
+
+  ul .speech.active {
+    pointer-events: none;
+  }
+
+  .buttons button {
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background-color: #5372f0;
+  }
+
+  .watermark {
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    color: #5372f0;
+  }
+}
+
+.quote-wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quote-content {
+  margin: 35px 0;
+}
+
+.quote-area {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-area .fa {
+  font-size: 15px;
+}
+
+.quote-area .fa:first-child {
+  margin: 3px 10px 0 0;
+}
+
+.quote-area .fa:last-child {
+  margin: 0 0 3px 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.quote-area .quote {
+  font-size: 22px;
+  text-align: center;
+}
+
+.author {
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+
+.author span:first-child {
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+
+.buttons {
+  border-top: 1px solid #ccc;
+}
+.features {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.features ul {
+  display: flex;
+}
+
+.features ul li {
+  margin: 0 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  cursor: pointer;
+  color: #5372f0;
+  list-style: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5372f0;
+  transition: all 0.3s ease;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+ul li:is(:hover, .active) {
+  color: #fff;
+  background-color: #5372f0;
+}
+
+ul .speech.active {
+  pointer-events: none;
+}
+
+.buttons button {
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background-color: #5372f0;
+}
+
+.watermark {
+  display: flex;
+  justify-content: end;
+  font-size: 15px;
+  color: #5372f0;
+}
